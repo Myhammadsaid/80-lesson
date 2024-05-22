@@ -22,12 +22,28 @@
   width: 200px;
   height: 200px;
   object-fit: cover;
-  border: 1px solid #000;
   border-radius: 10px;
 }
 
 .product-text {
-  font-size: 13px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.product-par {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.product-ratings {
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
