@@ -13,7 +13,13 @@ const Hero = () => {
               <p className="hero-par">При заказе от 3 до 10 товаров</p>
               <button className="hero-btn">Купить</button>
             </div>
-            <img width={895} height={286} src={img} alt="hero-img" />
+            <img
+              className="hero-img"
+              width={895}
+              height={286}
+              src={img}
+              alt="hero-img"
+            />
           </div>
         </div>
       </section>

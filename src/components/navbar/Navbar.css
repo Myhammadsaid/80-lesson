@@ -75,3 +75,23 @@ nav {
   top: 4px;
   position: absolute;
 }
+
+@media (max-width: 1115px) {
+  .nav-items {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #de2622;
+    padding: 10px 0;
+    max-width: 680px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  .nav-form {
+    display: none;
+  }
+}

@@ -50,3 +50,15 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 1115px) {
+  .hero-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .hero-img {
+    display: none;
+  }
+}

@@ -5,6 +5,11 @@ import "./Product.css";
 const Product = ({ data }) => {
   const cart = useStore((s) => s?.cart);
   const addToCart = useStore((s) => s?.addToCard);
+  console.log(cart);
+
+  const heart = useStore((v) => v?.value);
+  const toggleHeart = useStore((v) => v?.toggleHeart);
+  console.log(heart);
 
   let products = data?.map((val) => (
     <div key={val.id} className="product-card">
@@ -17,7 +22,7 @@ const Product = ({ data }) => {
       </p>
       <p className="product-price">{val.price} UZS</p>
       <div className="product-btns">
-        <button className="product-btn">
+        <button onClick={() => toggleHeart(val)} className="product-btn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
